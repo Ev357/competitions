@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-geist;
+  }
+
+  @font-face {
+    font-family: "Geist";
+    src: url("/assets/fonts/Geist.woff2") format("woff2");
+  }
+}

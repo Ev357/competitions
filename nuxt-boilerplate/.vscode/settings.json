@@ -1,0 +1,42 @@
+{
+  "cSpell.ignorePaths": [
+    "lang/cs.json",
+    "nuxt.config.ts",
+    "package.json",
+    "package-lock.json"
+  ],
+  "cSpell.words": [
+    "commitlint",
+    "dompurify",
+    "heroicons",
+    "Nuxt",
+    "Nuxtjs",
+    "Tailwindcss"
+  ],
+  "css.customData": [".vscode/tailwind.json"],
+  "css.lint.unknownAtRules": "ignore",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.prettier": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["ui:\\s*{([^)]*)\\s*}", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["/\\*ui\\*/\\s*{([^;]*)}", ":\\s*[\"'`]([^\"'`]*).*?[\"'`]"]
+  ],
+  "tailwindCSS.classAttributes": [
+    "class",
+    "active-class",
+    "activeClass",
+    "exactActiveClass",
+    "exact-active-class"
+  ],
+  "tailwindCSS.experimental.configFile": "tailwind.config.ts",
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
