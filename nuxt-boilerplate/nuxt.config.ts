@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@pinia/nuxt",
     "@nuxtjs/color-mode",
+    "shadcn-nuxt",
   ],
   eslint: {
     lintOnStart: false,
@@ -34,5 +35,9 @@ export default defineNuxtConfig({
   },
   colorMode: {
     classSuffix: "",
+  },
+  shadcn: {
+    prefix: "",
+    componentDir: "./components/ui",
   },
 });
