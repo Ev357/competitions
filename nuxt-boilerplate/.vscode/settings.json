@@ -6,6 +6,7 @@
     "package-lock.json"
   ],
   "cSpell.words": [
+    "Clsx",
     "Commitlint",
     "Dompurify",
     "heroicons",
@@ -26,16 +27,16 @@
   "files.associations": {
     "*.css": "tailwindcss"
   },
-  "tailwindCSS.experimental.classRegex": [
-    ["ui:\\s*{([^)]*)\\s*}", "[\"'`]([^\"'`]*).*?[\"'`]"],
-    ["/\\*ui\\*/\\s*{([^;]*)}", ":\\s*[\"'`]([^\"'`]*).*?[\"'`]"]
-  ],
   "tailwindCSS.classAttributes": [
     "class",
     "active-class",
     "activeClass",
     "exactActiveClass",
     "exact-active-class"
+  ],
+  "tailwindCSS.experimental.classRegex": [
+    ["ui:\\s*{([^)]*)\\s*}", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["/\\*ui\\*/\\s*{([^;]*)}", ":\\s*[\"'`]([^\"'`]*).*?[\"'`]"]
   ],
   "tailwindCSS.experimental.configFile": "tailwind.config.ts",
   "typescript.tsdk": "node_modules/typescript/lib"
