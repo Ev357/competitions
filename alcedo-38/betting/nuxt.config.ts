@@ -26,11 +26,6 @@ export default defineNuxtConfig({
         name: "English",
         file: "en.json",
       },
-      {
-        code: "cs",
-        name: "Čeština",
-        file: "cs.json",
-      },
     ],
   },
   colorMode: {
