@@ -1,0 +1,16 @@
+{
+  "APP_NAME": "Boilerplate",
+  "ERROR.APPLICATION": "An error occurred in the application and the page could not be served. If you are the application owner, check your server logs for details.",
+  "ERROR.BACK": "Go back",
+  "ERROR.BACK_HOME": "Go back home",
+  "ERROR.INTERNAL_ERROR": "Internal Server Error",
+  "ERROR.NOT_FOUND": "Not Found",
+  "ERROR.OFFLINE": "Offline",
+  "ERROR.OFFLINE_MESSAGE": "Offline. Please check your connection.",
+  "ERROR.PAGE_NOT_FOUND": "Page Not Found",
+  "ERROR.PAGE_NOT_FOUND_DESCRIPTION": "Sorry, the page you are looking for could not be found.",
+  "ERROR.PAGE_NOT_FOUND_URL": "Page not found: { url }",
+  "ERROR.PAGE_TEMPORARILY_UNAVAILABLE": "This page is temporarily unavailable.",
+  "ERROR.SERVER_ERROR": "Server error",
+  "ERROR.VIDEO": "Your browser does not support HTML video."
+}
