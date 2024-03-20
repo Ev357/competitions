@@ -12,6 +12,7 @@
     "heroicons",
     "Nuxt",
     "Nuxtjs",
+    "Pexeso",
     "Tailwindcss"
   ],
   "css.customData": [".vscode/tailwind.json"],

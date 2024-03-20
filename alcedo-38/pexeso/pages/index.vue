@@ -1,5 +1,7 @@
 <template>
-  <NuxtWelcome />
+  <div class="flex size-full items-center justify-center p-2">
+    <Game />
+  </div>
 </template>
 
 <script setup lang="ts">
