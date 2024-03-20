@@ -7,10 +7,13 @@
             v-for="bet in bets"
             :key="bet.value"
             :disabled="bet.state === 'chosen' || gameOver"
-            :variant="buttonVariants[bet.type]"
             :class="{
-              'shadow-inner shadow-gray-500': bet.state === 'chosen',
+              '!border-blue-500 shadow-inner shadow-gray-500':
+                bet.state === 'chosen',
+              '!bg-yellow-400': gameOver && bet.type === 'winning',
+              '!bg-orange-500': gameOver && bet.type === 'additional',
             }"
+            class="border-4 border-transparent"
             @click="chooseBet(bet.value)"
           >
             {{ bet.value }}
@@ -38,9 +41,7 @@
             class="min-w-24"
           />
         </div>
-        <UButton variant="secondary" :disabled="!gameOver" @click="resetGame()">
-          Reset game
-        </UButton>
+        <UButton variant="secondary" @click="resetGame()">Reset game</UButton>
       </UCard>
     </div>
     <UCard v-if="gameOver">
@@ -54,7 +55,6 @@
 </template>
 
 <script setup lang="ts">
-import type { ButtonVariants } from "@/components/ui/button";
 const { t } = useI18n();
 
 type BetType = "winning" | "default" | "additional" | "chosen";
@@ -97,13 +97,6 @@ const betCount = ref(0);
 const randomBetCount = ref(1);
 
 const gameOver = computed(() => betCount.value >= 5);
-
-const buttonVariants: Record<BetType, ButtonVariants["variant"]> = {
-  winning: "secondary",
-  default: "default",
-  additional: "ghost",
-  chosen: "destructive",
-};
 
 const chooseBet = (value: number) => {
   if (betCount.value < 5) {
