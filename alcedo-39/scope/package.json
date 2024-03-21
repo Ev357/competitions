@@ -1,0 +1,65 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "commit": "cz",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "husky install;nuxt prepare"
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && bunx cz --hook || true"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "@nuxt/image": "^1.4.0",
+    "@nuxtjs/color-mode": "^3.3.3",
+    "@pinia/nuxt": "^0.5.1",
+    "@radix-icons/vue": "^1.0.0",
+    "@vueuse/nuxt": "^10.9.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "isomorphic-dompurify": "^2.4.0",
+    "lucide-vue-next": "^0.359.0",
+    "nuxt": "^3.11.1",
+    "pinia": "^2.1.7",
+    "radix-vue": "^1.5.3",
+    "tailwind-merge": "^2.2.2",
+    "tailwindcss-animate": "^1.0.7",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
+    "@egoist/tailwindcss-icons": "^1.7.4",
+    "@iconify-json/heroicons": "^1.1.20",
+    "@iconify-json/mdi": "^1.1.64",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@nuxtjs/eslint-module": "^4.1.0",
+    "@nuxtjs/i18n": "^8.2.0",
+    "@nuxtjs/tailwindcss": "^6.11.4",
+    "@typescript-eslint/parser": "^7.3.1",
+    "ajv": "^8.12.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier-plugin-tailwindcss": "^0.5.12",
+    "sass": "^1.72.0",
+    "shadcn-nuxt": "^0.10.2"
+  }
+}
