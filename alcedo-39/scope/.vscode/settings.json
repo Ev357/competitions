@@ -1,4 +1,5 @@
 {
+  "cSpell.enabled": false,
   "cSpell.ignorePaths": [
     "lang/cs.json",
     "nuxt.config.ts",
