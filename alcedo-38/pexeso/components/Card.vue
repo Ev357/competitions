@@ -1,7 +1,7 @@
 <template>
   <UButton class="size-44 overflow-clip border p-0" variant="ghost">
     <NuxtImg
-      v-show="card.state === 'opened'"
+      v-show="card.isOpen"
       :src="card.image"
       :placeholder="blurredImage"
       class="size-full object-cover"
@@ -12,11 +12,12 @@
 </template>
 
 <script setup lang="ts">
-export type CardState = "closed" | "opened";
+export type CardState = "default" | "solved";
 export interface CardType {
   id: number;
   value: number;
   image: string;
+  isOpen: boolean;
   state: CardState;
 }
 

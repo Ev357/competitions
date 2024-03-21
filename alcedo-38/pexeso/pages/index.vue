@@ -1,6 +1,11 @@
 <template>
-  <div class="flex size-full items-center justify-center p-2">
-    <Game />
+  <div class="flex size-full items-center justify-center">
+    <div class="flex h-fit w-full justify-center p-2">
+      <div class="flex gap-2">
+        <Game />
+        <GameScore />
+      </div>
+    </div>
   </div>
 </template>
 
