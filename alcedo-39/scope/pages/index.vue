@@ -13,6 +13,8 @@
         :data="data"
         :x-domain="[0, parsedScope.lengthZaznam]"
         :y-domain="[-parsedScope.rozsah, parsedScope.rozsah]"
+        width="1500"
+        height="500"
       >
         <VisLine :x="x" :y="y" />
         <VisAxis type="x" label="Čas v sekundách" />
