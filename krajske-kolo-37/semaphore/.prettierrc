@@ -1,0 +1,10 @@
+{
+  "tailwindConfig": "./tailwind.config.ts",
+  "plugins": [
+    "prettier-plugin-tailwindcss"
+  ],
+  "pluginSearchDirs": [
+    "."
+  ],
+  "htmlWhitespaceSensitivity": "ignore"
+}
