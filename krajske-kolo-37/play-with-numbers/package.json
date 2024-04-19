@@ -1,0 +1,14 @@
+{
+  "name": "bun-boilerplate",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "mkdir -p dist && bun build ./src/index.ts --minify --splitting --outdir dist/"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
