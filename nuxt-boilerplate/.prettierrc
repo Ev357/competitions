@@ -1,5 +1,5 @@
 {
-  "tailwindConfig": "./tailwind.config.ts",
+  "tailwindConfig": "./tailwind.config.js",
   "plugins": [
     "prettier-plugin-tailwindcss"
   ],

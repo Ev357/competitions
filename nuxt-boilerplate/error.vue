@@ -55,7 +55,7 @@ const statusMessage =
   (is404 ? t("ERROR.PAGE_NOT_FOUND") : t("ERROR.INTERNAL_ERROR"));
 
 const getDescription = () => {
-  const description: string = error.value.message || error.toString();
+  const description: string = error.value.message || error.value.toString();
   return description.startsWith("Page not found")
     ? t("ERROR.PAGE_NOT_FOUND_URL", { url: error.value.url })
     : description;

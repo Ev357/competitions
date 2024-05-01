@@ -10,8 +10,10 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@nuxtjs/color-mode",
     "shadcn-nuxt",
+    "@nuxt/eslint",
   ],
   eslint: {
+    // @ts-expect-error Type for the eslint module is not updated yet
     lintOnStart: false,
     emitError: false,
   },
