@@ -54,7 +54,7 @@
     @apply border-border;
   }
   body {
-    @apply font-geist bg-background text-foreground;
+    @apply bg-background font-geist text-foreground;
   }
   @font-face {
     font-family: "Geist";
