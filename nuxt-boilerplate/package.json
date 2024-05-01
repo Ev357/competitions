@@ -8,7 +8,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "husky;nuxt prepare",
+    "postinstall": "nuxt prepare",
     "prepare": "husky"
   },
   "husky": {
